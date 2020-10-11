@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  background: #f5f6f7;
+}
+
+main {
+  max-width: 30rem;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+main > h4, h5 {
+  text-align: center;
+}
+
+.Add-loan {
+  margin: .5rem auto;
+  padding: .5rem;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  border-radius: 5px;
+}
+
+.Add-loan input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 20rem;
+  border: 1px solid #F3D060;
+  border-radius: 10px;
+  outline: none;
+}
+
+.Add-loan button {
+  width: 20rem;
+  padding: 0.7rem;
+  border: 1px solid #F3D060;
+  background: #F3D060;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Add-loan button:hover {
+  background: #F3D060;
+}
+
+.Add-loan button:disabled {
+  background: #d8d8d8;
+  border: 1px solid #d8d8d8;
+  cursor: not-allowed;
+}
+
+.Loan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.Loan:not(:last-child) {
+  border-bottom: 2px solid #f5f6f7;
+}
+
+.Loan h3, h5 {
+  color: #222;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.Loan p {
+  padding-right: 1rem;
+  color: #444;
+}
+.Loan button {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #F3D060;
+  background: #F3D060;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Loan button:hover {
+  background: #ffc400;
+}
+
+.Loan button:disabled {
+  background: #d8d8d8;
+  border: 1px solid #d8d8d8;
+  cursor: not-allowed;
+}
