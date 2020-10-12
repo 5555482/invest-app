@@ -43,8 +43,9 @@ const reducer = (
         case actionTypes.UPDATE_LOAN:
             const updatedLoans: ILoan[] = state.loans.map(
                 loan => {
-                    if (loan.id === action.loan.id) {
-                        loan.available -= action.loan.available
+                    if (loan.id === action.loan.id && action.loan.available >= 0) { // update with the real input data N action.loan.available >= N
+                        loan.available -= 10.000 // update with the real input data N
+                        console.log("HHH" + JSON.stringify(loan))
                         return loan
                     } else { return loan }
                 }
@@ -54,7 +55,7 @@ const reducer = (
                 loans: updatedLoans,
             }
     }
-    console.log("Stop:" + JSON.stringify(state))
+
     return state
 }
 

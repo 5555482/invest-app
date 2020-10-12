@@ -50,7 +50,7 @@ export const Loan: React.FC<Props> = ({ loan, updateLoan }) => {
                                 <br />
                                     Loan ends in: {loan.term_remaining}
                             </CardText>
-                            <FormGroup onSubmit={addNewInvestment} className="Add-loan">
+                            <FormGroup className="Add-loan">
                                 <Label>Investment amount (£)</Label>
                                 <Input
                                     type="number"
@@ -58,7 +58,7 @@ export const Loan: React.FC<Props> = ({ loan, updateLoan }) => {
                                     placeholder="Invest"
                                     onChange={handleLoanData}
                                 />
-                                <Button>Invest</Button>
+                                <Button onClick={addNewInvestment}>Invest</Button>
                             </FormGroup>
                         </CardBody>
                     </Card >
